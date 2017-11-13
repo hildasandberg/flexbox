@@ -47,8 +47,9 @@ header {
 .student img {
   object-position: top;
   object-fit: cover;
-  width: 80%;
-  /*height:180px;*/
+  width: 90%;
+  margin:auto;
+
 }
 
 .student h2{
@@ -60,7 +61,10 @@ header {
 
   @media (max-width:425px) {
     .yearbook{
+      width: 90%;
+      margin-left: 2.5%;
       flex-direction: column;
+      padding: 0;
     }
     .student{
       width: 100%;
