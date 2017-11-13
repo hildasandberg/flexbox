@@ -1,0 +1,75 @@
+html {
+  background: pink; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(pink, orange); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(pink, orange); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(pink, orange); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(pink, orange); /* Standard syntax (must be last) */
+  color: #fff;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.logo img {
+  width: 140px;
+  margin-top: 55px;
+}
+
+.yearbook{
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.student{
+  text-align: center;
+  background-color: white;
+  width: 20%;
+  margin: 2.5%;
+  padding-top: 10px;
+  box-shadow: 2px 2px 5px rgba(158, 158, 158, 0.8);
+}
+
+.student img {
+  object-position: top;
+  object-fit: cover;
+  width: 80%;
+  /*height:180px;*/
+}
+
+.student h2{
+  font-size: 25px;
+  color: rgb(0, 31, 206);
+  font-family: 'Pacifico', cursive;
+  margin: 5px;
+}
+
+  @media (max-width:425px) {
+    .yearbook{
+      flex-direction: column;
+    }
+    .student{
+      width: 100%;
+    }
+  }
+
+  @media (min-width:426px) and (max-width:900px){
+    .student{
+      width: 45%;
+      margin: 2.5%;
+    }
+  }
