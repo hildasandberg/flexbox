@@ -48,6 +48,7 @@ header {
   object-position: top;
   object-fit: cover;
   width: 90%;
+  height: 15vw;
   margin:auto;
 
 }
@@ -69,11 +70,17 @@ header {
     .student{
       width: 100%;
     }
+    .student img{
+      height: 80vw;
+    }
   }
 
   @media (min-width:426px) and (max-width:900px){
     .student{
       width: 45%;
       margin: 2.5%;
+    }
+    .student img{
+      height: 30vw;
     }
   }
